@@ -1,0 +1,1 @@
+Average Column Score(masked) vs F-Score(masked) of the top methods divided by database categories. For this figure, the number of alignments used for each benchmark are as follows: 8 in Sisyphus-Fold, 17 in Sisyphus-Fragment, and 76 in Sisyphus-Homologous.

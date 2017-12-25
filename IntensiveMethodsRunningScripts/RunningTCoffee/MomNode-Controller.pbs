@@ -1,0 +1,33 @@
+#!/bin/bash
+#PBS -A bakr
+#PBS -q low
+#PBS -m be
+#PBS -M youremail@email.com
+#PBS -j oe
+#PBS -l nodes=1:ppn=32:xe
+#PBS -l walltime=48:00:00
+
+cd $PBS_O_WORKDIR
+
+arrid=${arrid}
+jobpernode=${jobpernode}
+database=${database}
+
+#Creating an array of all datasets
+cd input/AminoAcids/$database
+alldatasets=($(ls *.faa))
+cd - > /dev/null 2>&1
+
+#Selecting the datasets assigned to this job form the array of all datasets, and then running them.
+for (( c=$((arrid*jobpernode)); c<$((jobpernode*(arrid+1))); c++ ))
+do
+	datasetext="${alldatasets[c]}"
+	dataset="${datasetext%.*}"
+	echo $dataset is starting to run
+	
+	#Making sure that the dataset name is not empty, and then running it.
+	if [ ! -z $dataset ];then
+		aprun -n 1 -N 1 -d 32 /usr/bin/time -v ./ComputationNode-Runner.sh $dataset $database
+	fi
+	echo "----------**********----------"
+done
