@@ -19,9 +19,8 @@ Here is a brief description of the folders. For more detailed information, pleas
 	
 		The scripts used for plotting the material in the article.
 		
-	4) MikesThouroughFiles:
+	4) MikesThoroughFiles:
 	
-		These are the files that Mike needed to be complete, without anything being taken away (such as BRaliBase data).
 		Mike will have to remove these files along with this line of documentation after he downloads them.
 		
 Here are the references and a link to the published article:
