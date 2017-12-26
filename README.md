@@ -7,13 +7,13 @@ Here is a brief description of the folders. For more detailed information, pleas
 
         This folder includes the scripts for running the following alignment methods:
         
-        Mafft Variants, Promals, ContrAlign, ProbAlign, ProbCons, Muscle,
+        Mafft variants, Promals, ContrAlign, ProbAlign, ProbCons, Muscle,
         Prime, Clustal-Omega, DiAlign, KAlign, and Prank
         
     2) IntensiveMethodsRunningScripts:
 
         This folder includes a sample script for running computationally intensive methods 
-		(i.e. BAliPhy, TCoffee, Mafft-Homologs) on different benchmarks using an HPC platform.
+		(i.e., BAli-Phy, TCoffee, and Mafft-Homologs) on different benchmarks using an HPC platform.
 		
 	3) Plotting:
 	
