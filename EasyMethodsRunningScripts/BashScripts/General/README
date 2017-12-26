@@ -81,10 +81,6 @@ Step4.1.bash		==> Creating a table to feed StatAlign with protein substitution m
 					Input of Step 4 is: ProcessedData/LINSIAlignments/"NucleicOrAmino"Acids/"Database"
 					Output of Step 4 is: ProcessedData/AlphabetAndModel/"NucleicOrAmino"Acids/"Database".csv
 
-Step5.bash			==> This step generates the "best" raxml trees (by best, we mean using the best option we could find,). This step was not done in the main paper.
-					Input of Step 4 is: ProcessedData/MAFFTAlignments/"NucleicOrAmino"Acids/"Database"
-					Output of Step 4 is: ProcessedData/RAxMLTrees/"NucleicOrAmino"Acids/"Database".csv
-					
 Step8.bash			==> This step assesses the accuracy of all the estimated alignments and gives you one csv data file, and an average file.
 
 Step9.bash			==> This step finds the ess values of BaliPhy runnings and generates a csv file.
