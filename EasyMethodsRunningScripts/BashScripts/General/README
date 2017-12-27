@@ -5,25 +5,25 @@ For instance: Database=Sisyphus or Database=Homstrad or Database=MattBench or Da
 
 Also the data type is denoted with the "NucleicOrAmino" variable. NucleicOrAmino can either equal Amino or Nucleic 
 (NucleicOrAmino=Amino or NucleicOrAmino=Nucleic).
-
-		1) Step0.bash			==> Copying and Renaming(Just Adding the dataset name in prefix) and 
+```
+		1) Step0.bash		==> Copying and Renaming(Just Adding the dataset name in prefix) and 
 							Aggregating all of the datasets of "Database" into the 
 								Datasets/Sampled/"NucleicOrAmino"Acids/"Database" folder.
 							(Warning: Step0 only works properly, when you have executed the step -1 
 								manually and right before its execution. 
 								Running Step0.bash twice will result in an error.)
 
-		2) Step1.bash			==> Renaming the Sequences of Step0.bash
+		2) Step1.bash		==> Renaming the Sequences of Step0.bash
 							Input of Step1 is: Datasets/Sampled/"NucleicOrAmino"Acids/"Database" 
 							Output of Step 1 is: Datasets/SampledAndRenamed/"NucleicOrAmino"Acids/"Database"
 							
-		3) Step2.bash			==> Unaligning sequences of Step1.bash
+		3) Step2.bash		==> Unaligning sequences of Step1.bash
 							Input of Step 2 is: 
 								Datasets/SampledAndRenamed/"NucleicOrAmino"Acids/"Database"
 							Output of Step 2 is: 
 								Datasets/SampledAndRenamedAndUnaligned/"NucleicOrAmino"Acids/"Database"
 							
-		4) Step3.bash			==> Aligning sequences of Step2.bash using MAFFT Auto
+		4) Step3.bash		==> Aligning sequences of Step2.bash using MAFFT Auto
 							Input of Step 3 is: 
 								Datasets/SampledAndRenamedAndUnaligned/"NucleicOrAmino"Acids/"Database"
 							Output of Step 3 is: 
@@ -129,7 +129,7 @@ Also the data type is denoted with the "NucleicOrAmino" variable. NucleicOrAmino
 							csv data file, and an average file.
 
 		Step9.bash			==> This step finds the ess values of BaliPhy runnings and generates a csv file.
-
+```
 ---------------------
 Additional Python Scripts:
 
