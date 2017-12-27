@@ -1,4 +1,4 @@
-# Scripts necessary for running the methods and storing the processed data
+# Scripts
 These instructions apply to all benchmarks.
 We will denote the benchmark name with "Database" variable when addressing them. 
 For instance: Database=Sisyphus or Database=Homstrad or Database=MattBench or Database=BAliBase or ...
@@ -132,7 +132,7 @@ Step3.x3.bash		==> Aligning sequences of Step2.bash using Promals (First Step3.x
 20) Step9.bash		==> This step finds the ess values of BaliPhy runnings and generates a csv file.
 ```
 
-##Additional Python Scripts:
+## Additional Python Scripts:
 
 These python scripts are used within the bash script files describes Above:
 ```
