@@ -158,7 +158,7 @@ E) NewManyCsvToOne.py			==> This script concatenates multiple csv files and gene
 	
 									This python script is used within "step8.bash" script.
 					
-F) StrangeToSimpleNamemapper.py ==> This script renames the sequences inside fasta files, and is used within "step1.bash" script.
+F) StrangeToSimpleNamemapper.py	==> This script renames the sequences inside fasta files, and is used within "step1.bash" script.
 					
 G) RawFastaMaker.py				==> This script unaligns the reference alignment so that they would later be fed to the alignment methods.
 	
