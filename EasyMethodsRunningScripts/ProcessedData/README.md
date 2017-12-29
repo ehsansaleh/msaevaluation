@@ -1,12 +1,7 @@
-Due to excessive amount of files, we had to zip the files so that the total number of files is reduced. Please just execute the following code piece to unzip all of the zipped files.
+# Estimated Alignment Files
 
-for file in $(ls);do
-	tar -xzvf $file
-done
-
-----------
 The brief description of the files:
-
+'''
 AlphabetAndModel.tar.gz										==> The csv files used for feeding to BaliPhy, which contain the best protein substitution model.
 BPAlns.tar.gz												==> BAliPhy MAP and PD Estimated Alignments, and Trees.
 ClustalWAlignments.tar.gz									==> Clustal-Omega Estimated Alignment.
@@ -25,3 +20,4 @@ PrimeAlignments.tar.gz										==> Prime Estimated Alignments.
 ProbAlignAlignments.tar.gz									==> ProbAlign Estimated Alignments.
 PromalsAlignments.tar.gz									==> Promals Estimated Alignments.
 TCoffeeAlignments.tar.gz									==> TCoffee Estimated Alignments.
+'''
